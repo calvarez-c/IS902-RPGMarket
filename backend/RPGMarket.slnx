@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="RPGMarket.API/RPGMarket.API.csproj" />
+  <Project Path="RPGMarket.Application/RPGMarket.Application.csproj" />
+  <Project Path="RPGMarket.Domain/RPGMarket.Domain.csproj" />
+  <Project Path="RPGMarket.Infrastructure/RPGMarket.Infrastructure.csproj" />
+</Solution>
