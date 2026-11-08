@@ -1,6 +1,15 @@
-@RPGMarket.API_HostAddress = http://localhost:5185
-
-GET {{RPGMarket.API_HostAddress}}/weatherforecast/
+### 1. Obtener todos los objetos RPG
+GET http://localhost:5000/api/items
 Accept: application/json
 
-###
+### 2. Crear una nueva espada legendaria
+POST http://localhost:5000/api/items
+Content-Type: application/json
+
+{
+  "name": "Espada de Escarcha +5",
+  "category": "Arma",
+  "rarity": "Legendario",
+  "basePrice": 2500.00,
+  "imageUrl": "/images/items/frostmourne.png"
+}
