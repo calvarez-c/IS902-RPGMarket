@@ -1,4 +1,5 @@
 using DotNetEnv;
+using RPGMarket.Application;
 using RPGMarket.Infrastructure;
 using Scalar.AspNetCore;
 
@@ -12,6 +13,7 @@ var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__Po
 builder.Services.AddInfrastructure(connectionString);
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
+builder.Services.AddApplication();
 
 var app = builder.Build();
 
